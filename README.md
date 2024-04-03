@@ -21,7 +21,7 @@ presented back (as a table) in the web app.
 IDE (PyCharm), Python, pip
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
-from bson import ObjectId
+optional: from bson import ObjectId
 
 #### Site Directory
 app.py
