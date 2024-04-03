@@ -1,7 +1,7 @@
 # Welcome to a Small Python/Flask/MongoDB Web App 
 
 ## App Overview:
-Simple Demo App to show round-trip of data from a 
+Demonstration App to show round-trip of data from a 
 web form (entry) to a database (mongodb), and then 
 presented back (as a table) in the web app. 
 
