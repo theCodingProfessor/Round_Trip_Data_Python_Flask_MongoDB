@@ -6,16 +6,16 @@ web form (entry) to a database (mongodb), and then
 presented back (as a table) in the web app. 
 
 ### App Home
-![Alt Text](../img/app_home.png)
+![App Home Page](./static/img/app_home.png)
 
 ### App Web Form
-![Alt Text](../img/app_form.png)
+![App Web Form](./static/img/app_form.png)
 
 ### New User
-![Alt Text](../img/new_user.png)
+![New User Page](./static/img/new_user.png)
 
 ### App Data
-![Alt Text](../img/show_users.png)
+![Registered User Page](./static/img/show_users.png)
 
 ### Site Requirements:
 IDE (PyCharm), Python, pip
