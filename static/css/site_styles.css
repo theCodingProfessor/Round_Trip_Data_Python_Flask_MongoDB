@@ -1,0 +1,184 @@
+/*
+ * Site Styles for Python/Flask App
+ * Last Update 2024
+ * */
+
+/* Minimal CSS styling for the form */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding-top: 75px;
+}
+footer {
+    background-color: #001;
+    color: #FFF;
+    height: 3em;
+    margin-top: .1em;
+}
+footer hr {
+    color: deepskyblue;
+}
+footer p {
+    padding-left: 1em;
+    display: inline;
+}
+.page_content {
+    margin-left: 10px;
+}
+fieldset {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+form {
+    width: 95%;
+    margin: 0 auto;
+}
+label {
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+    /* Add some space between labels and inputs */
+    margin: 10px 5px 10px 0;
+}
+label#dr, label#dw {
+    margin-left: 0;
+    text-align: left;
+    width: 10%;
+}
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    padding: 1em;
+    margin: 0 10px 10px 0;
+    border-radius: .5em;
+    font-size: large;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+button[type="submit"] {
+    background-color: #ca7508;
+    color: #001;
+    margin: 20px 0 20px 2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+}
+.body_content {
+    margin-left: 2.5em;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table caption {
+    font-size: large;
+    background-color: #0073e6;
+    color: #FFFFFF;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+/*  nav Style Section */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #001, #f88e03);
+    padding: 10px;
+    border-bottom: 1px solid #7c4e11;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    margin-right: 20px;
+    display: inline;
+}
+nav a {
+    color: #FFF;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*  Topic and Content Style Section */
+.topic_intro {
+    padding-left: 25px;
+}
+h1 {
+    font-size: xx-large;
+    color: #7c4e11;
+    display: flex;
+    padding-left: 1em;
+}
+article hr {
+    border-color: #0d47a1;
+    margin: 10px 0;
+}
+textarea {
+    width: 100%;
+}
+
+/* Style the table that displays object data */
+table.object_data {
+    width: 100%;
+    border-collapse: collapse;
+    }
+th, td {
+   border: 1px solid black;
+   padding: 8px;
+   text-align: left;
+   }
+td.last_cell {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally to the center */
+    align-items: center; /* Aligns items vertically to the center */
+}
+.edit_data{
+    border: 1px solid orange;
+    background-color: transparent;
+    color: black;
+    border-radius: 8%;
+    padding: 1em;
+}
+.remove_data {
+    border: 1px solid royalblue;
+    background-color: black;
+    color: orange;
+    border-radius: 8%;
+    padding: 1em;
+}
+.edit_data:hover {
+    font-weight: bold;
+}
+.remove_data:hover {
+    color: #FFFFFF;
+}
