@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Input page for basic demo web application, allows entry of sample user data.">
+  <title>Web Form: Python/Flask</title>
+  <link rel="stylesheet" href="/static/css/site_styles.css">
+  <link rel="icon" href="../static/img/sf.ico">
+</head>
+<body>
+<div>{% include('nav.html') %}</div>
+<main>
+  <h1>Data Entry</h1>
+  <div class="page_content">
+    <article class="topic_intro">
+      <hr>
+      <h2>User Registration</h2>
+     </article>
+  </div>
+  <div class="body_content">
+    <fieldset>
+      <legend>New User Input Area</legend>
+      <form method="POST" action="/success">
+        <label for="user_name">Username:</label>
+        <input type="text" id="user_name" name="user_name" pattern="[A-Za-z]{5,20}" title="5-20 alpha characters, no spaces or punctuation" placeholder="Enter username (5-20 alpha characters)">
+        <label for="pass_phrase">Passphrase:</label>
+        <input type="text" id="pass_phrase" name="pass_phrase" pattern="[A-Za-z0-9.,!?-]{5,20}" title="5-20 alphanumeric characters, commas, periods, exclamation marks, question marks, or hyphens" placeholder="Enter passkey (5-20 characters)">
+        <label>User Role:</label>
+        <label id='dr' for="dev_read"><input type="radio" id="dev_read" name="read_write" value="app_guest_read" required>Read</label>
+        <label id='dw' for="dev_write"><input type="radio" id="dev_write" name="read_write" value="app_guest_write" required>Write</label>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+  </div>
+</main>
+<div>{% include('footer.html') %}</div>
+</body>
+</html>

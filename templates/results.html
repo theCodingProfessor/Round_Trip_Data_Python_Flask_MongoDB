@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Results page for demo web application showing simple SQL stack using XAMPP mariadb, php, html and css.">
+  <title>Results: Python/Flask</title>
+  <link rel="stylesheet" href="/static/css/site_styles.css">
+  <link rel="icon" href="../static/img/sf.ico">
+</head>
+<body>
+<div>{% include('nav.html') %}</div>
+<main>
+  <h1>Data Store Results</h1>
+  <div class="page_content">
+    <article class="topic_intro">
+      <hr>
+      <h2>Registered Users</h2>
+     </article>
+  </div>
+  <div class="body_content">
+    <table id="data-table">
+        <thead><tr>
+          <th>Username</th>
+          <th>Pass Key</th>
+          <th>User Role</th>
+          <th>Update</th>
+          <th>Remove</th>
+            </tr></thead>
+<tbody>
+    {% for item in page_data %}
+      <tr data-id="{{ item._id }}">
+        <td>{{ item['user_name'] }}</td>
+        <td>{{ item['pass_phrase'] }}</td>
+        <td>{{ item['user_role'] }}</td>
+        <td><button class="edit_data" onclick="editRow('{{ item._id }}')">Edit</button></td>
+        <td class="last_cell"><button class="remove_data" onclick="removeRow('{{ item._id }}')">Remove</button></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</main>
+<div>{% include('footer.html') %}</div>
+<script src="{{ url_for('static', filename='js/data_buttons.js') }}"></script>
+</body>
+</html>

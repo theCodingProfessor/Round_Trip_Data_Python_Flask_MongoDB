@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Success landing page for demo web application.">
+  <title>Success: Python/Flask</title>
+  <link rel="stylesheet" href="/static/css/site_styles.css">
+  <link rel="icon" href="../static/img/sf.ico">
+</head>
+<body>
+<div>{% include('nav.html') %}</div>
+<main>
+  <h1>Data Received</h1>
+  <div class="page_content">
+    <article class="topic_intro">
+      <hr>
+      <h2>Data Summary: </h2>
+    </article>
+  </div>
+  <div class="body_content">
+    <p>
+      User Name: {{ user }} <br>
+      Security Key: {{ password }} <br>
+      Data Role: {{ role }} <br>
+    </p>
+</div>
+</main>
+<div>{% include('footer.html') %}</div>
+<script src="/static/js/data_buttons.js"></script>
+</body>
+</html>
